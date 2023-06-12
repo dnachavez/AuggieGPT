@@ -48,7 +48,7 @@ def app():
     """
     try:
         # Set the page configuration
-        st.set_page_config(layout="wide")
+        st.set_page_config(page_title="AuggieGPT", page_icon="agustinjereza.png", layout="wide")
 
         # Display an image
         img = Image.open("agustinjereza.png")
