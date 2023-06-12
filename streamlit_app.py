@@ -10,7 +10,7 @@ openai.api_key = st.secrets["API_key"]
 openai.api_base = st.secrets["API_base"]
 
 # Initiate global history
-history = []
+global history = []
 
 def append_history(history, item):
     """
