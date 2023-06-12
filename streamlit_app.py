@@ -68,9 +68,8 @@ def app():
         # Collect user input
         user_input = st.text_area("Input your question:", height=5)
 
-        history = []
-
         # Process the input and display the response when the 'Submit' button is pressed
+        history = []
         if st.button("Submit"):
             history = append_history(history, ("You: " + user_input))
             output = get_reply(user_input)
