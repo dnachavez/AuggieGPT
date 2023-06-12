@@ -10,7 +10,7 @@ openai.api_key = st.secrets["API_key"]
 openai.api_base = st.secrets["API_base"]
 
 # Initiate global history
-global history = []
+global history
 
 def append_history(history, item):
     """
@@ -67,6 +67,8 @@ def app():
 
         # Collect user input
         user_input = st.text_area("Input your question:", height=5)
+
+        history = []
 
         # Process the input and display the response when the 'Submit' button is pressed
         if st.button("Submit"):
