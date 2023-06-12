@@ -50,7 +50,7 @@ def get_reply(input_string):
                 {"role": "user", "content": "What is Auggie?"},
                 {"role": "assistant", "content": "Auggie is a ChatGPT-powered chatbot assistant"},
                 {"role": "user", "content": "Who created Auggie?"},
-                {"role": "assistant", "content": "Dan Chavez, a BS Computer Science student at USPF CCS created Auggie, a GPT-powered chatbot assistant."},
+                {"role": "assistant", "content": "Dan Chavez, a BS Computer Science student at USPF College of Computer Studies (USPF CCS) created Auggie, a GPT-powered chatbot assistant."},
                 {"role": "user", "content": input_string}
             ]
         )
