@@ -29,7 +29,7 @@ def get_reply(input_string):
     """
     try:
         response = openai.ChatCompletion.create(
-            model = "gpt-3.5-turbo",
+            model = "pai-001-light-beta",
             max_tokens = 1000,
             messages = [
                 {"role": "system", "content": "You are a helpful assistant."},
