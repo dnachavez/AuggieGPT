@@ -93,7 +93,7 @@ def app():
                     st.write(item)
 
         # Display additional information
-        st.markdown("-----------\n\nThis project of [Dan Chavez](https://www.dnachavez.ph) leverages the capabilities of generative AI with specific knowledge on a set of topics. Similar to ChatGPT, it can engage the user in a human-like conversation. Through the use of prompt engineering, the AI has been trained with specific information beyond the general knowledge base of ChatGPT.")
+        st.markdown("-----------\n\nThis project of [Dan Chavez](https://dnachavez.ph) leverages the capabilities of generative AI with specific knowledge on a set of topics. Similar to ChatGPT, it can engage the user in a human-like conversation. Through the use of prompt engineering, the AI has been trained with specific information beyond the general knowledge base of ChatGPT.")
         st.markdown("\n\n\nCopyright © 2023 University of Southern Philippines Foundation")
         st.markdown("\n\n\n**Disclaimer:** Augi may produce inaccurate information about people, places, or facts, especially if the question is outside the scope of topics it was trained on.")
         st.markdown("*Created with ❤️ from Cebu City, Philippines*")
