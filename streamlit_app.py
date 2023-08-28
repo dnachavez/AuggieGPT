@@ -47,10 +47,10 @@ def get_reply(input_string):
                 {"role": "assistant", "content": "The goal of the University of Southern Philippines Foundation (USPF) is to transform into a dynamic learning institution that aligns with global standards in education and the work environment."},
                 {"role": "user", "content": "What are the core values?"},
                 {"role": "assistant", "content": "The University of Southern Philippines Foundation (USPF) upholds the following core values: 1. Professionalism: At USPF, professionalism is paramount. We uphold a high standard of conduct and competence in all our interactions and endeavors, ensuring professionalism in our dealings at all times and in all contexts., 2. Integrity: We value integrity as a fundamental principle. Integrity is the foundation of our actions, and we strive to keep our integrity intact and untarnished. We act with honesty, transparency, and ethical behavior in all aspects of our work., 3. Excellence: USPF is committed to the pursuit of excellence. We strive for excellence in the performance of our tasks, be it in teaching, research, administration, or any other field. We consistently seek improvement, innovation, and the highest quality in everything we do., 4. Social Responsibility: Recognizing our role as an educational institution, we embrace social responsibility. We actively engage with our community and society at large, taking part in initiatives that contribute positively to the well-being and development of our local and global communities. We aim to make a difference and promote positive change through our actions and initiatives."},
-                {"role": "user", "content": "What is Auggie?"},
-                {"role": "assistant", "content": "Auggie is a ChatGPT-powered chatbot assistant"},
-                {"role": "user", "content": "Who created Auggie?"},
-                {"role": "assistant", "content": "Dan Chavez, a BS Computer Science student at USPF College of Computer Studies (CCS) created Auggie, a GPT-powered chatbot assistant."},
+                {"role": "user", "content": "What is Augi?"},
+                {"role": "assistant", "content": "Augi is a ChatGPT-powered chatbot assistant"},
+                {"role": "user", "content": "Who created Augi?"},
+                {"role": "assistant", "content": "Dan Chavez, a BS Computer Science student at USPF College of Computer Studies (CCS) created Augi, a GPT-powered chatbot assistant."},
                 {"role": "user", "content": input_string}
             ]
         )
@@ -66,7 +66,7 @@ def app():
     """
     try:
         # Set the page configuration
-        st.set_page_config(page_title="AuggieGPT", page_icon="agustinjereza.png", layout="wide")
+        st.set_page_config(page_title="AugiGPT", page_icon="agustinjereza.png", layout="wide")
 
         # Display an image
         img = Image.open("agustinjereza.png")
@@ -75,8 +75,8 @@ def app():
         st.image(img)
 
         # Display the chatbot information
-        st.markdown("# Hello, I'm Auggie! How can I assist you today?")
-        st.markdown("## Auggie is a ChatGPT-powered chatbot assistant")
+        st.markdown("# Hello, I'm Augi! How can I assist you today?")
+        st.markdown("## Augi is a ChatGPT-powered chatbot assistant")
         st.markdown("This chatbot assistant is capable of providing answers to questions specifically about the **University of Southern Philippines Foundation (USPF)**.")
 
         # Collect user input
@@ -88,14 +88,14 @@ def app():
             history = append_history(history, ("You: " + user_input))
             output = get_reply(user_input)
             if output is not None:
-                history = append_history(history, ("Auggie: " + output))
+                history = append_history(history, ("Augi: " + output))
                 for item in history:
                     st.write(item)
 
         # Display additional information
         st.markdown("-----------\n\nThis project of [Dan Chavez](https://www.dnachavez.ph) leverages the capabilities of generative AI with specific knowledge on a set of topics. Similar to ChatGPT, it can engage the user in a human-like conversation. Through the use of prompt engineering, the AI has been trained with specific information beyond the general knowledge base of ChatGPT.")
         st.markdown("\n\n\nCopyright © 2023 University of Southern Philippines Foundation")
-        st.markdown("\n\n\n**Disclaimer:** Auggie may produce inaccurate information about people, places, or facts, especially if the question is outside the scope of topics it was trained on.")
+        st.markdown("\n\n\n**Disclaimer:** Augi may produce inaccurate information about people, places, or facts, especially if the question is outside the scope of topics it was trained on.")
         st.markdown("*Created with ❤️ from Cebu City, Philippines*")
 
     except Exception as e:
